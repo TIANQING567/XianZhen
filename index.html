@@ -1,129 +1,148 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>陷阵之志，有死无生！</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", "微软雅黑", sans-serif;
-            background: #f6f8fa;
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <title>陷阵之志，有死无生！</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 5% auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            line-height: 1.8;
-        }
+    body {
+      font-family: "Segoe UI", "微软雅黑", sans-serif;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      color: #eaeaea;
+      min-height: 100vh;
+    }
 
-        h3, h4 {
-            margin-top: 24px;
-            color: #e63946;
-        }
+    .container {
+      max-width: 960px;
+      margin: 60px auto;
+      background: rgba(30, 30, 30, 0.85);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 0, 80, 0.2);
+      backdrop-filter: blur(10px);
+    }
 
-        p {
-            margin: 12px 0;
-            color: #444;
-        }
+    h3, h4 {
+      color: #ff4d6d;
+      margin-top: 28px;
+      font-weight: 600;
+    }
 
-        a {
-            color: #1d3557;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    p {
+      margin: 14px 0;
+      color: #ccc;
+      line-height: 1.8;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    a {
+      color: #4dabf7;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
 
-        .disclaimer, .author-note, .hvh-note {
-            background-color: #fff4f4;
-            border-left: 5px solid #e63946;
-            padding: 20px;
-            margin-top: 30px;
-            border-radius: 8px;
-        }
+    a:hover {
+      color: #74c0fc;
+      text-decoration: underline;
+    }
 
-        .highlight {
-            background-color: #f1f1f1;
-            padding: 10px;
-            border-radius: 6px;
-            margin-top: 20px;
-        }
+    .disclaimer, .author-note, .hvh-note {
+      background: rgba(255, 77, 109, 0.05);
+      border-left: 5px solid #ff4d6d;
+      padding: 24px;
+      margin-top: 36px;
+      border-radius: 12px;
+    }
 
-        ul {
-            padding-left: 20px;
-        }
+    .highlight {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #444;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
 
-        ul li {
-            line-height: 2.2;
-        }
+    ul {
+      padding-left: 24px;
+    }
 
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #888;
-            font-size: 14px;
-        }
-    </style>
+    ul li {
+      line-height: 2.2;
+      color: #bbb;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
+  <div class="container">
 
-        <div class="disclaimer">
-            <h4>免责声明</h4>
-            <p>1. 本软件仅为游戏辅助工具，并非篡改游戏数据的软件，不会收集用户任何个人信息。请勿利用本软件侵犯他人隐私，否则请自行删除并承担后果，作者概不负责。</p>
-            <p>2. 本软件不含病毒、木马等恶意代码，但因网络传播途径复杂，从非指定渠道下载的版本不受保障，可能存在潜在风险，作者概不负责。</p>
-            <p>3. 软件会不定期更新修复漏洞，添加功能，承诺无任何数据破坏行为。</p>
-            <p>4. 考虑到用户设备千差万别，无法承诺本软件在所有机器上都运行稳定达到预期要求。</p>
-            <p>5. 本辅助完全免费，仅接受自愿赞助。作者拒绝道德绑架，无义务持续维护。</p>
-            <p>6. 若被认为存在侵权问题，请联系 <strong>859948837@qq.com</strong>，核实后第一时间删除处理。</p>
-            <p>7. 一旦下载并运行，即视为用户同意以上所有条款，若有异议，请勿使用。</p>
-        </div>
-
-        <div class="author-note">
-            <h4>作者的一些话</h4>
-            <p>1. 本软件永久免费，不接单、不收费。赞助靠自愿，没强求谁掏钱。</p>
-            <p>2. 初心是做个公益 HVH 工具，但总有人倒卖牟利，还搞得别人被骗。我会把名单直接打包放压缩包里，认错就发邮件申请删名。</p>
-            <p>3. 倒卖过于猖獗的情况下，考虑直接停更关服。</p>
-            <p>4. 作者是学生，没办法随时响应，有空有心情才会更新。别催，催没用。</p>
-            <p>5. 本工具专为 HVH 场景设计，不"建议"破坏正常玩家的游戏体验。</p>
-            <p>6. 陷阵永久免费，绝无收费版本，不存在所谓高级版,赞助版,VIP版等收费版本。</p>
-        </div>
-
-        <div class="hvh-note">
-            <h4>关于 HVH 的几点说明</h4>
-            <p>1. 如果你打不过，在不是这些情况下（帧数卡到个位数、Ping飙上天、显示器60Hz对面240Hz那种），再确认对面跟你一样开的是暴力自瞄、反自瞄、解析。你能正常击中对面，那就说明问题不在软件，而在你操作和判断力，别老拿“谁的挂更强”这种理由来掩盖自己的无能。</p>
-            <p>2. 这是公益软件，不是你定制的专属工具。水印是防止倒卖截图用的，不是什么“遮挡视野”。谁拿这点挑刺攻击软件或作者，概不接受，过分者将被一切手段反击。别整那一套道德绑架和网暴。</p>
-            <p>3. 再说一遍，这是公益暴力辅助，不是你花钱买来的“专属定制高贵VIP”。滥用就有风险，可能会被检测甚至封号 想拿这点攻击软件和作者不会忍气吞声，会用尽一切方式维护名誉给予反击。</p>
-        </div>
-
-        <div class="highlight">
-            <p>交流群：826657028（<strong>不活跃/不看说明勿进</strong>）</p>
-            <p>交流群为“游戏”交流群，保持活跃且遵守群规,qq等级不足25级或以上的,不会同意</p>
-            <p>赞助方式：查看 QQ <strong>859948837</strong> 精选照片（备注：软件赞助）</p>
-        </div>
-
-        <h3>功能最新版本为：陷阵(XX)</h3>
-        <p>上传状态：已上传｜状态：未弹窗检测（有时间差，请自行测试）</p>
-
-        <h3>注入器最新版本为：1.6R</h3>
-        <p>发布状态：已发布</p>
-
-        <h3>新版本下载：</h3>
-        <p><a href="./陷阵_注入器1.6R.zip">点击下载</a></p>
-
-        <h3>XX版本开放时间：2025年6月20日 21:50</h3>
-
-        <h3>公益辅助，拒绝辱骂、催更、道德绑架！</h3>
-
-        <h3>免费软件，倒卖死亲爹烂亲妈。工作日一天一特征，双休日同参考时间为上午9点。不建议使用大号！</h3>
-
+    <div class="disclaimer">
+      <h4>免责声明</h4>
+      <p>1. 本软件仅为游戏辅助工具，并非篡改游戏数据的软件，不会收集用户任何个人信息。请勿利用本软件侵犯他人隐私，否则请自行删除并承担后果，作者概不负责。</p>
+      <p>2. 本软件不含病毒、木马等恶意代码，但因网络传播途径复杂，从非指定渠道下载的版本不受保障，可能存在潜在风险，作者概不负责。</p>
+      <p>3. 软件会不定期更新修复漏洞，添加功能，承诺无任何数据破坏行为。</p>
+      <p>4. 考虑到用户设备千差万别，无法承诺本软件在所有机器上都运行稳定达到预期要求。</p>
+      <p>5. 本辅助完全免费，仅接受自愿赞助。作者拒绝道德绑架，无义务持续维护。</p>
+      <p>6. 若被认为存在侵权问题，请联系 <strong>859948837@qq.com</strong>，核实后第一时间删除处理。</p>
+      <p>7. 一旦下载并运行，即视为用户同意以上所有条款，若有异议，请勿使用。</p>
     </div>
+
+    <div class="author-note">
+      <h4>作者的一些话</h4>
+      <p>1. 本软件永久免费，不接单、不收费。赞助靠自愿，没强求谁掏钱。</p>
+      <p>2. 初心是做个公益 HVH 工具，但总有人倒卖牟利，还搞得别人被骗。我会把名单直接打包放压缩包里，认错就发邮件申请删名。</p>
+      <p>3. 倒卖过于猖獗的情况下，考虑直接停更关服。</p>
+      <p>4. 作者是学生，没办法随时响应，有空有心情才会更新。别催，催没用。</p>
+      <p>5. 本工具专为 HVH 场景设计，不"建议"破坏正常玩家的游戏体验。</p>
+      <p>6. 陷阵永久免费，绝无收费版本，不存在所谓高级版,赞助版,VIP版等收费版本。</p>
+    </div>
+
+    <div class="hvh-note">
+      <h4>关于 HVH 的几点说明</h4>
+      <p>1. 如果你打不过，在不是这些情况下（帧数卡到个位数、Ping飙上天、显示器60Hz对面240Hz那种），再确认对面跟你一样开的是暴力自瞄、反自瞄、解析。你能正常击中对面，那就说明问题不在软件，而在你操作和判断力，别老拿“谁的挂更强”这种理由来掩盖自己的无能。</p>
+      <p>2. 这是公益软件，不是你定制的专属工具。水印是防止倒卖截图用的，不是什么“遮挡视野”。谁拿这点挑刺攻击软件或作者，概不接受，过分者将被一切手段反击。别整那一套道德绑架和网暴。</p>
+      <p>3. 再说一遍，这是公益暴力辅助，不是你花钱买来的“专属定制高贵VIP”。滥用就有风险，可能会被检测甚至封号 想拿这点攻击软件和作者不会忍气吞声，会用尽一切方式维护名誉给予反击。</p>
+    </div>
+
+    <div class="highlight">
+      <p>交流群：826657028（<strong>不活跃/不看说明勿进</strong>）</p>
+      <p>交流群为“游戏”交流群，保持活跃且遵守群规,qq等级不足25级或以上的,不会同意</p>
+      <p>赞助方式：查看 QQ <strong>859948837</strong> 精选照片（备注：软件赞助）</p>
+    </div>
+
+    <h3>功能最新版本为：陷阵(XXI)</h3>
+    <p>上传状态：已上传｜状态：未弹窗检测（有时间差，请自行测试）</p>
+
+    <h3>注入器最新版本为：1.6R</h3>
+    <p>发布状态：已发布</p>
+
+    <h3>新版本下载：</h3>
+    <p><a href="./陷阵_注入器1.6R.zip">点击下载</a></p>
+
+    <h3>XX版本开放时间：2025年6月26日 19:50</h3>
+
+    <h3>公益辅助，拒绝辱骂、催更、道德绑架！</h3>
+
+    <h3>免费软件，倒卖死亲爹烂亲妈。工作日一天一特征，双休日同参考时间为上午9点。不建议使用大号！</h3>
+
+  </div>
 </body>
 </html>
